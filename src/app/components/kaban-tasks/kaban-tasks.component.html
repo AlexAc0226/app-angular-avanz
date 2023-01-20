@@ -1,0 +1,31 @@
+<div class="container">
+  <h2>Pendientes</h2>
+
+  <div cdkDropList #todoList="cdkDropList" [cdkDropListData]="todoTasks"
+      [cdkDropListConnectedTo]="doneList" class="list" (cdkDropListDropped)="drop($event)">
+    <ng-container *ngIf="todoTasks.length === 0">
+      <h4 class='msg-enhorabuena'>
+        ¡Enhorabuena! No tienes tareas pendientes. Puedes irte a casa
+      </h4>
+    </ng-container>
+    <div appMouseOver="tomato" defaultColor="lightgreen" class="list-item" *ngFor="let task of todoTasks" cdkDrag>
+      <app-task appLifeCycle [task]="task"></app-task>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <h2>Completadas</h2>
+
+  <div cdkDropList #doneList="cdkDropList" [cdkDropListData]="doneTasks"
+      [cdkDropListConnectedTo]="todoList" class="list" (cdkDropListDropped)="drop($event)">
+    <ng-container *ngIf="doneTasks.length === 0">
+      <h4 class='msg-trabajar'>
+        No tienes tareas completadas. Debes ponerte las pilas
+      </h4>
+    </ng-container>
+    <div appMouseOver="lightgreen" defaultColor="lightgreen" [ngClass]="{'completed-task': task.completed}" class="list-item" *ngFor="let task of doneTasks" cdkDrag>
+      <app-task appLifeCycle [task]="task"></app-task>
+    </div>
+  </div>
+</div>

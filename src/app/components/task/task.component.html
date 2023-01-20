@@ -1,0 +1,30 @@
+<div>
+
+  <!-- Iconos de livel de importancia para las tareas -->
+  <div
+    [ngSwitch]="task.level"
+    [ngClass]="
+      {
+        'info-task': task.level === 0,
+        'urgent-task': task.level === 1,
+        'blocking-task': task.level === 2
+      }"
+  >
+    <mat-icon *ngSwitchCase="0">
+      info
+    </mat-icon>
+    <mat-icon *ngSwitchCase="1">
+      report_problem
+    </mat-icon>
+    <mat-icon *ngSwitchCase="2">
+      dangerous
+    </mat-icon >
+    <p *ngSwitchDefault>
+      info
+    </p>
+  </div>
+
+
+  <h2>{{task.title}}</h2>
+  <h3>{{task.description}}</h3>
+</div>

@@ -1,0 +1,66 @@
+{
+  "results": [
+    {
+      "gender": "female",
+      "name": {
+        "title": "Miss",
+        "first": "Nellie",
+        "last": "Ray"
+      },
+      "location": {
+        "street": {
+          "number": 181,
+          "name": "Lone Wolf Trail"
+        },
+        "city": "North Charleston",
+        "state": "Illinois",
+        "country": "United States",
+        "postcode": 16942,
+        "coordinates": {
+          "latitude": "83.5125",
+          "longitude": "163.1444"
+        },
+        "timezone": {
+          "offset": "+3:00",
+          "description": "Baghdad, Riyadh, Moscow, St. Petersburg"
+        }
+      },
+      "email": "nellie.ray@example.com",
+      "login": {
+        "uuid": "bb180794-1357-468e-a2da-c1261641496c",
+        "username": "purplerabbit204",
+        "password": "speedy",
+        "salt": "nvCyI3Mh",
+        "md5": "3e9f2863a7bef3f9713fdb174f2341cd",
+        "sha1": "16cfdc51dcd1965e9384ffdaff50393de81aa894",
+        "sha256": "1edec834a853fa7474c5a07de901e027eabc01025ca70bba8631ed3d6b9d8c12"
+      },
+      "dob": {
+        "date": "1952-11-02T07:51:03.602Z",
+        "age": 70
+      },
+      "registered": {
+        "date": "2009-08-26T02:14:29.428Z",
+        "age": 13
+      },
+      "phone": "(420)-353-7279",
+      "cell": "(960)-800-5536",
+      "id": {
+        "name": "SSN",
+        "value": "769-38-3138"
+      },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/7.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/7.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/7.jpg"
+      },
+      "nat": "US"
+    }
+  ],
+  "info": {
+    "seed": "1fc1e3f31f94afc2",
+    "results": 1,
+    "page": 1,
+    "version": "1.3"
+  }
+}
